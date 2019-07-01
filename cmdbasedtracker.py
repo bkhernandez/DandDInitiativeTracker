@@ -39,7 +39,7 @@ while repeat:
     combat_party.sort(key=itemgetter(0), reverse=True) # Sorts by roll
 
     for thing in combat_party:
-        print(thing)
+        print(thing[0], thing[1])
 
     print("Go again? (Y/N): ")
     if input() == "N" or input() == "n":
